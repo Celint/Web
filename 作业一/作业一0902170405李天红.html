@@ -4,7 +4,7 @@
  * @Github: https://github.com/Celint/Web
  * @Date: 2019-08-30 19:07:02
  * @LastEditors: 李天红
- * @LastEditTime: 2019-08-30 22:12:18
+ * @LastEditTime: 2019-08-30 23:27:28
  -->
 <!DOCTYPE html>
 <html lang="zh">
@@ -16,7 +16,7 @@
     </head>
     <style>
         body {
-            background-image: url("http://39.108.215.96/Web//images/lenka.jpg");
+            background-image: url("http://39.108.215.96/Web/images/lenka.jpg");
             background-repeat: repeat-y;
             background-color: #f0f0f0;
             background-position: left, top;
@@ -102,6 +102,29 @@
             background: #df6b57;
         }
 
+        /* 浮窗 */
+        .flow {
+            background-color: #f3f3f3;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+            text-align: center;
+            color: #444;
+            width: 100px;
+            right: 20px;
+            top: 50%;
+            position: fixed;
+        }
+
+        .flow:hover {
+            -webkit-box-shadow: #ccc 10px 10px 10px;
+            -moz-box-shadow: #ccc 10px 10px 10px;
+            box-shadow: #ccc 10px 10px 10px;
+        }
+
+        .flow img {
+            width: 100px;
+        }
+
         /* 正文 */
         .content {
             width: 86%;
@@ -138,7 +161,7 @@
         <div class="warper">
             <div id="leftside">
                 <div class="logo">
-                    <img src="http://39.108.215.96/Web//images/student.png">
+                    <img src="http://39.108.215.96/Web/images/student.png">
                 </div>
                 <div class="studentjj">
                     <div>
@@ -146,7 +169,7 @@
                             <tbody>
                                 <tr>
                                     <td align="center">
-                                        <img src="http://39.108.215.96/Web//images/Redsky.jpg" width="200" border="0">
+                                        <img src="http://39.108.215.96/Web/images/Redsky.jpg" width="200" border="0">
                                     </td>
                                 </tr>
                             </tbody>
@@ -190,6 +213,10 @@
                         </ul>
                     </div>
                 </div>
+                <a href="https://t.cn/Ai8FlcMr">
+                    <div class="flow">太复杂了? <br />试试看朴素版<br /><img src="http://39.108.215.96/Web/images/pig.png" />
+                    </div>
+                </a>
                 <div class="content">
                     <div class="con_bload">
                         <h1>简历</h1>

@@ -4,7 +4,7 @@
  * @Github: https://github.com/Celint/Web
  * @Date: 2019-08-30 17:01:02
  * @LastEditors: 李天红
- * @LastEditTime: 2019-08-30 19:46:26
+ * @LastEditTime: 2019-08-30 23:29:23
  -->
 <!DOCTYPE html>
 <html lang="zh">
@@ -41,6 +41,29 @@
         .right-side span {
             margin-right: 40px;
         }
+
+        /* 浮窗 */
+        .flow {
+            background-color: white;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px;
+            text-align: center;
+            color: #444;
+            width: 100px;
+            right: 20px;
+            top: 50%;
+            position: fixed;
+        }
+
+        .flow:hover {
+            -webkit-box-shadow: #ccc 10px 10px 10px;
+            -moz-box-shadow: #ccc 10px 10px 10px;
+            box-shadow: #ccc 10px 10px 10px;
+        }
+
+        .flow img {
+            width: 100px;
+        }
     </style>
 
     <body>
@@ -49,6 +72,9 @@
                 <h1 style="color: white">简历</h1>
             </div>
             <div class="right-side">
+                <a href="https://t.cn/Ai8kz6pj">
+                    <div class="flow">快去个人主页看看吧<br /><img src="http://39.108.215.96/Web/images/pig.png" /></div>
+                </a>
                 <div>
                     <h2>基本信息</h2>
                     <span>
