@@ -1,245 +1,93 @@
 <!--
- * @描述: 作业一：个人简历(主页高仿版)
+ * @描述: 作业一：个人简历
  * @作者: 李天红
  * @Github: https://github.com/Celint/Web
- * @Date: 2019-08-30 19:07:02
+ * @Date: 2019-08-30 17:01:02
  * @LastEditors: 李天红
- * @LastEditTime: 2019-08-30 22:12:18
+ * @LastEditTime: 2019-08-30 19:46:26
  -->
 <!DOCTYPE html>
 <html lang="zh">
 
     <head>
         <meta charset="utf-8" />
-        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"> 适应移动端 -->
-        <title>李天红的个人主页</title>
+        <title>李天红的简历</title>
     </head>
     <style>
         body {
-            background-image: url("http://39.108.215.96/Web//images/lenka.jpg");
-            background-repeat: repeat-y;
-            background-color: #f0f0f0;
-            background-position: left, top;
-            padding: 0;
-            margin: 0;
-            font-family: "微软雅黑", "宋体", Verdana, Arial, Helvetica, sans-serif;
+            margin: auto;
         }
 
-        .warper {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        /* 左边 */
-        #leftside {
+        /* 简历左边 */
+        .bar {
+            margin-top: -20px;
+            text-align: center;
             float: left;
-            width: 360px;
+            width: 240px;
+            height: 750px;
             overflow-y: hidden;
+            background-color: #67A3FB;
         }
 
-        .logo {
-            background-color: #2a2a2a;
-            text-align: center;
-            height: 63px;
+        .bar h1 {
+            margin-top: 40px;
         }
 
-        .studentjj {
-            padding-top: 8px;
+        /* 简历右边 */
+        .right-side {
+            margin-left: 270px;
         }
 
-        .name {
-            text-align: center;
-            color: white;
-        }
-
-        .ojbk {
-            margin-left: 50px;
-            width: 85%;
-            font-size: 15px;
-            color: white;
-            line-height: 15px;
-            padding-top: 6px;
-            margin: 0 auto;
-        }
-
-        /* 右边 */
-        #rightside {
-            margin-left: 360px;
-        }
-
-        /* 导航栏 */
-        .nav {
-            width: 100%;
-            height: 63px;
-            background-color: #2a2a2a;
-        }
-
-        .menu {
-            width: 90%;
-            float: left;
-            margin: -16px;
-        }
-
-        .menu li {
-            list-style: none;
-            float: left;
-            line-height: 63px;
-        }
-
-        .menu .item a {
-            font-size: 16px;
-            color: #FFF;
-            padding: 0 18px;
-            display: block;
-            text-decoration: none;
-        }
-
-        .menu .item a:hover {
-            background: #df6b57;
-        }
-
-        .menu .on {
-            background: #df6b57;
-        }
-
-        /* 正文 */
-        .content {
-            width: 86%;
-            min-height: 950px;
-            padding: 0 20px 20px 60px;
-        }
-
-        .con_bload {
-            padding: 20px 0 20px 0;
-            border-bottom: 1px dotted #9e9e9e;
-        }
-
-        .content p {
-            color: #313131;
-            line-height: 32px;
-            font-size: 14px;
-        }
-
-        /* 版权 */
-        .copyright {
-            width: 80%;
-            height: 30px;
-            padding: 0 15px 0 40px;
-            color: #727272;
-        }
-
-        .copyright li {
-            float: left;
-            list-style: none;
+        .right-side span {
+            margin-right: 40px;
         }
     </style>
 
     <body>
-        <div class="warper">
-            <div id="leftside">
-                <div class="logo">
-                    <img src="http://39.108.215.96/Web//images/student.png">
-                </div>
-                <div class="studentjj">
-                    <div>
-                        <table width="100%">
-                            <tbody>
-                                <tr>
-                                    <td align="center">
-                                        <img src="http://39.108.215.96/Web//images/Redsky.jpg" width="200" border="0">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="name">
-                        <strong style="font-size: 20px">李天红</strong><br />
-                        <strong style="font-size: 15px">Junior Student</strong>
-                    </div>
-                    <div class="ojbk">
-                        <p>大三学生</p>
-                        <p>单位：计算机学院</p>
-                        <p>入学时间：2017年9月</p>
-                        <p>学位：学士学位</p>
-                        <p>专业：计算机科学与技术</p>
-                        <p>电子邮件：0902170405@csu.edu.cn</p>
-                        <p>寝室：升华学生公寓28栋南215寝室</p>
-                    </div>
-                </div>
+        <div>
+            <div class="bar">
+                <h1 style="color: white">简历</h1>
             </div>
-            <div id="rightside">
-                <div class="nav">
-                    <div class="menu">
-                        <ul>
-                            <li class="item"><a class="on" href=""><strong>首页</strong></a></li>
-                        </ul>
-                        <ul>
-                            <li class="item"><a href=""><strong>论文成果</strong></a></li>
-                        </ul>
-                        <ul>
-                            <li class="item"><a href=""><strong>科研项目</strong></a></li>
-                        </ul>
-                        <ul>
-                            <li class="item"><a href=""><strong>专利成果</strong></a></li>
-                        </ul>
-                        <ul>
-                            <li class="item"><a href=""><strong>获奖信息</strong></a></li>
-                        </ul>
-                        <ul>
-                            <li class="item"><a href=""><strong>研究领域</strong></a></li>
-                        </ul>
-                    </div>
+            <div class="right-side">
+                <div>
+                    <h2>基本信息</h2>
+                    <span>
+                        <strong>姓名</strong> &nbsp; 李天红
+                    </span>
+                    <span>
+                        <strong>性别</strong> &nbsp; 男
+                    </span>
+                    <span>
+                        <strong>应聘职位</strong> &nbsp; Web前端工程师
+                    </span>
                 </div>
-                <div class="content">
-                    <div class="con_bload">
-                        <h1>简历</h1>
-                    </div>
-                    <div class="con_bload">
-                        <h2>个人简历</h2>
-                        <p>
-                            李天红, 男, 中南大学计算机学院计算机科学与技术专业大三学生。<br />
-                            作为技术骨干先后参与了2019年大学生创新创业项目, 2019 -- 中国高校计算机大赛 微信小程序应用开发赛<br />
-                            联系邮箱 &nbsp; 0902170405@csu.edu.cn
-                        </p>
-                    </div>
-                    <div class="con_bload">
-                        <h2>教育经历</h2>
-                        <p>
-                            [1] &nbsp; 2017.9 - 至今<br />
-                            中国 中南大学CSU | 计算机学院 | 本科生
-                        </p>
-                    </div>
-                    <div class="con_bload">
-                        <h2>服务经历</h2>
-                        <p>
-                            [1] &nbsp; 2017.10 - 2018.6<br />
-                            中南大学爱吧志愿组织 | 志愿者<br />
-                            [2] &nbsp; 2017.11 - 2019.6<br />
-                            中南大学创新创业办公室中国大学生创业网网络技术部 | 员工
-                        </p>
-                    </div>
-                    <div class="con_bload">
-                        <h2>修习课程</h2>
-                        <p>
-                            [1] &nbsp; 移动应用开发<br />
-                            [2] &nbsp; 数据分析与融合<br />
-                            [3] &nbsp; 软件工程<br />
-                            [4] &nbsp; 大型数据库技术<br />
-                            [5] &nbsp; Web技术<br />
-                            [6] &nbsp; 计算机图形学<br />
-                            [7] &nbsp; 毛泽东思想与中国特色社会主义理论体系概论<br />
-                            [8] &nbsp; 机器学习<br />
-                            [9] &nbsp; 创新创业导论<br />
-                            [10] &nbsp; 网络工程<br />
-                            [11] &nbsp; 信息与网络安全<br />
-                        </p>
-                    </div>
+                <div>
+                    <h2>联系方式</h2>
+                    <span>
+                        <strong>手机</strong> &nbsp; 13278887005
+                    </span>
+                    <span>
+                        <strong>Email</strong> &nbsp; <a href="">0902170405@csu.edu.cn</a>
+                    </span>
+                    <span>
+                        <strong>个人主页</strong> &nbsp; <a href="https://github.com/Celint" target="_blank"
+                            rel="noopener noreferrer">Github</a>
+                    </span>
                 </div>
-                <div class="copyright">
-                    <ul>
-                        <li></li>
-                        <li>©李天红</li>
-                    </ul>
+                <div>
+                    <h2>能力描述</h2>
+                    <p><strong>技术能力</strong> <br /> 熟练掌握HTML, CSS, JavaScript</p>
+                    <p><strong>综合能力</strong> <br /> 良好的沟通，主动积极，努力勤奋</p>
+                </div>
+                <div>
+                    <h2>教育经历</h2>
+                    <p><strong>本科</strong> <br /> 中南大学计算机学院计算机科学与技术专业</p>
+                </div>
+                <div>
+                    <h2>项目经历</h2>
+                    <p><strong>大学生创新创业项目</strong> <br /> 基于互联网+的二手书交易与Spider抓取建库的阅读分享平台
+                    </p>
+                    <p><strong>2019 -- 中国高校计算机大赛 微信小程序应用开发赛</strong> <br /> CSU二手书交易平台</p>
                 </div>
             </div>
         </div>
