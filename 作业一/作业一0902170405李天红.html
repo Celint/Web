@@ -4,7 +4,7 @@
  * @Github: https://github.com/Celint/Web
  * @Date: 2019-08-30 19:07:02
  * @LastEditors: 李天红
- * @LastEditTime: 2019-09-01 12:04:02
+ * @LastEditTime: 2019-09-03 23:34:26
  -->
 <!DOCTYPE html>
 <html lang="zh">
@@ -13,153 +13,153 @@
         <meta charset="utf-8" />
         <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"> 适应移动端 -->
         <title>李天红的个人主页</title>
+        <style>
+            body {
+                background-image: url("http://39.108.215.96/Web/images/lenka.jpg");
+                background-repeat: repeat-y;
+                background-color: #f0f0f0;
+                background-position: left, top;
+                padding: 0;
+                margin: 0;
+                font-family: "微软雅黑", "宋体", Verdana, Arial, Helvetica, sans-serif;
+            }
+
+            .warper {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            /* 左边 */
+            #leftside {
+                float: left;
+                width: 360px;
+                overflow-y: hidden;
+            }
+
+            .logo {
+                background-color: #2a2a2a;
+                text-align: center;
+                height: 63px;
+            }
+
+            .studentjj {
+                padding-top: 8px;
+            }
+
+            .name {
+                text-align: center;
+                color: white;
+            }
+
+            .ojbk {
+                margin-left: 50px;
+                width: 85%;
+                font-size: 15px;
+                color: white;
+                line-height: 15px;
+                padding-top: 6px;
+                margin: 0 auto;
+            }
+
+            .ojbk img {
+                width: 20px;
+            }
+
+            /* 右边 */
+            #rightside {
+                margin-left: 360px;
+            }
+
+            /* 导航栏 */
+            .nav {
+                width: 100%;
+                height: 63px;
+                background-color: #2a2a2a;
+            }
+
+            .menu {
+                width: 90%;
+                float: left;
+                margin: -16px;
+            }
+
+            .menu li {
+                list-style: none;
+                float: left;
+                line-height: 63px;
+            }
+
+            .menu .item a {
+                font-size: 16px;
+                color: #FFF;
+                padding: 0 18px;
+                display: block;
+                text-decoration: none;
+            }
+
+            .menu .item a:hover {
+                background: #df6b57;
+            }
+
+            .menu .on {
+                background: #df6b57;
+            }
+
+            /* 浮窗 */
+            .flow {
+                background-color: #f3f3f3;
+                border: 1px solid #e3e3e3;
+                border-radius: 5px;
+                text-align: center;
+                color: #444;
+                width: 100px;
+                right: 20px;
+                top: 50%;
+                position: fixed;
+            }
+
+            .flow:hover {
+                -webkit-box-shadow: #ccc 10px 10px 10px;
+                -moz-box-shadow: #ccc 10px 10px 10px;
+                box-shadow: #ccc 10px 10px 10px;
+            }
+
+            .flow img {
+                width: 100px;
+            }
+
+            /* 正文 */
+            .content {
+                width: 86%;
+                min-height: 950px;
+                padding: 0 20px 20px 60px;
+            }
+
+            .con_bload {
+                padding: 20px 0 20px 0;
+                border-bottom: 1px dotted #9e9e9e;
+            }
+
+            .content p {
+                color: #313131;
+                line-height: 32px;
+                font-size: 14px;
+            }
+
+            /* 版权 */
+            .copyright {
+                width: 80%;
+                height: 30px;
+                padding: 0 15px 0 40px;
+                color: #727272;
+            }
+
+            .copyright li {
+                float: left;
+                list-style: none;
+            }
+        </style>
     </head>
-    <style>
-        body {
-            background-image: url("http://39.108.215.96/Web/images/lenka.jpg");
-            background-repeat: repeat-y;
-            background-color: #f0f0f0;
-            background-position: left, top;
-            padding: 0;
-            margin: 0;
-            font-family: "微软雅黑", "宋体", Verdana, Arial, Helvetica, sans-serif;
-        }
-
-        .warper {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        /* 左边 */
-        #leftside {
-            float: left;
-            width: 360px;
-            overflow-y: hidden;
-        }
-
-        .logo {
-            background-color: #2a2a2a;
-            text-align: center;
-            height: 63px;
-        }
-
-        .studentjj {
-            padding-top: 8px;
-        }
-
-        .name {
-            text-align: center;
-            color: white;
-        }
-
-        .ojbk {
-            margin-left: 50px;
-            width: 85%;
-            font-size: 15px;
-            color: white;
-            line-height: 15px;
-            padding-top: 6px;
-            margin: 0 auto;
-        }
-
-        .ojbk img {
-            width: 20px;
-        }
-
-        /* 右边 */
-        #rightside {
-            margin-left: 360px;
-        }
-
-        /* 导航栏 */
-        .nav {
-            width: 100%;
-            height: 63px;
-            background-color: #2a2a2a;
-        }
-
-        .menu {
-            width: 90%;
-            float: left;
-            margin: -16px;
-        }
-
-        .menu li {
-            list-style: none;
-            float: left;
-            line-height: 63px;
-        }
-
-        .menu .item a {
-            font-size: 16px;
-            color: #FFF;
-            padding: 0 18px;
-            display: block;
-            text-decoration: none;
-        }
-
-        .menu .item a:hover {
-            background: #df6b57;
-        }
-
-        .menu .on {
-            background: #df6b57;
-        }
-
-        /* 浮窗 */
-        .flow {
-            background-color: #f3f3f3;
-            border: 1px solid #e3e3e3;
-            border-radius: 5px;
-            text-align: center;
-            color: #444;
-            width: 100px;
-            right: 20px;
-            top: 50%;
-            position: fixed;
-        }
-
-        .flow:hover {
-            -webkit-box-shadow: #ccc 10px 10px 10px;
-            -moz-box-shadow: #ccc 10px 10px 10px;
-            box-shadow: #ccc 10px 10px 10px;
-        }
-
-        .flow img {
-            width: 100px;
-        }
-
-        /* 正文 */
-        .content {
-            width: 86%;
-            min-height: 950px;
-            padding: 0 20px 20px 60px;
-        }
-
-        .con_bload {
-            padding: 20px 0 20px 0;
-            border-bottom: 1px dotted #9e9e9e;
-        }
-
-        .content p {
-            color: #313131;
-            line-height: 32px;
-            font-size: 14px;
-        }
-
-        /* 版权 */
-        .copyright {
-            width: 80%;
-            height: 30px;
-            padding: 0 15px 0 40px;
-            color: #727272;
-        }
-
-        .copyright li {
-            float: left;
-            list-style: none;
-        }
-    </style>
 
     <body>
         <div class="warper">
