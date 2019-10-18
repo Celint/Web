@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 800px;
+}
+
+.serverTopBar {
+    height: 80px;
+    background: #818181;
+    color: white;
+}
+
+.serverTitle {
+    float: left;
+    font-size: 60px;
+}
+
+.user {
+    position: relative;
+    float: right;
+    top: 60px;
+}
+
+.redcircle {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 18px;
+    background: red;
+    border-radius: 25px;
+}
+
+.greencircle {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 18px;
+    background: green;
+    border-radius: 25px;
+}
+
+.showname {
+    position: absolute;
+    top: -22px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 作业第二题 */
+
+.box {
+    position: relative;
+    margin: auto 0;
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web {
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    /* top: 33px; */
+    margin: auto 0;
+}
